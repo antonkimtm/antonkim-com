@@ -1,0 +1,256 @@
+@charset "utf-8";
+
+/* Шрифты — подмножества Inter из брендбука City Chess (brandbook_v2.html).
+   Кириллица и латиница разнесены по unicode-range: браузер тянет только нужное. */
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/inter-400-cyrillic.woff2') format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/inter-400-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('fonts/inter-700-cyrillic.woff2') format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('fonts/inter-700-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('fonts/inter-900-cyrillic.woff2') format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('fonts/inter-900-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Токены брендбука City Chess, тёмный набор (.dark-scope из brandbook_v2.html).
+   Страница всегда чёрная — светлой темы у неё нет. */
+
+:root {
+  color-scheme: dark;
+
+  --ff-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+
+  --c-paper: #000000;
+  --c-card: #0f0f0f;
+  --c-ink: #ffffff;
+  --c-ink-muted: #999999;
+  --c-accent: #e11919;
+  --c-rule: #1f1f1f;
+
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+
+  --radius-md: 8px;
+  /* Кадрирование по референсу Антона: голова с воздухом вокруг.
+     Подложка круга белая — вырез снят на светлом, и на чёрной странице
+     белый диск даёт нужный контраст. */
+  --avatar: clamp(168px, 52vw, 232px);
+  --c-avatar-bed: #ffffff;
+  --measure: 26rem;
+}
+
+/* База */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-6);
+  padding: var(--space-7) var(--space-5);
+  background: var(--c-paper);
+  color: var(--c-ink);
+  font-family: var(--ff-sans);
+  font-size: 16px;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* Карточка */
+
+.page {
+  width: 100%;
+  max-width: var(--measure);
+  text-align: center;
+}
+
+.avatar {
+  display: block;
+  width: var(--avatar);
+  height: var(--avatar);
+  margin: 0 auto var(--space-5);
+  border-radius: 50%;
+  background: var(--c-avatar-bed);
+}
+
+.name {
+  margin: 0;
+  font-size: clamp(32px, 8vw, 48px);
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.lead {
+  margin: var(--space-3) auto 0;
+  max-width: 22rem;
+  color: var(--c-ink-muted);
+}
+
+/* Список площадок */
+
+.places {
+  margin-top: var(--space-7);
+  text-align: left;
+}
+
+.places__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--c-rule);
+}
+
+.places__list > li {
+  border-bottom: 1px solid var(--c-rule);
+}
+
+.place {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-3);
+  color: inherit;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.place__icon {
+  flex: none;
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+  color: var(--c-ink-muted);
+  transition: color 0.15s ease;
+}
+
+.place__name {
+  font-weight: 700;
+}
+
+.place__handle {
+  color: var(--c-ink-muted);
+  font-size: 14px;
+}
+
+.place:hover {
+  background: var(--c-card);
+}
+
+.place:hover .place__icon {
+  color: var(--c-ink);
+}
+
+.place:focus-visible {
+  outline: 2px solid var(--c-accent);
+  outline-offset: 2px;
+  background: var(--c-card);
+}
+
+/* Подвал */
+
+.foot {
+  width: 100%;
+  max-width: var(--measure);
+  color: var(--c-ink-muted);
+  font-size: 13px;
+  text-align: center;
+}
+
+.foot p {
+  margin: 0;
+}
+
+/* Крупные экраны: подвал прижимается к низу, карточка держится по центру */
+
+@media (min-width: 40rem) {
+  body {
+    justify-content: center;
+    padding-bottom: var(--space-6);
+  }
+
+  .foot {
+    margin-top: var(--space-4);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

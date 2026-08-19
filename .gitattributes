@@ -1,0 +1,6 @@
+# Единый перенос строки: CNAME с CRLF ломает привязку домена в GitHub Pages
+* text=auto eol=lf
+*.woff2 binary
+*.webp  binary
+*.png   binary
+*.zip   binary
