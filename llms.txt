@@ -1,7 +1,8 @@
 # Антон Ким / Anton Kim
 
 > Шахматный журналист, комментатор и стример из Узбекистана. Автор и ведущий
-> популярного русскоязычного YouTube-канала о шахматах City Chess.
+> популярного русскоязычного YouTube-канала о шахматах City Chess —
+> 100 тысяч подписчиков, 60 миллионов просмотров.
 
 Известен как «тильт-мастер». Никнейм на игровых площадках: antonkimtm.
 
@@ -23,7 +24,39 @@
 - Instagram: https://www.instagram.com/antonkimtm/
 - Chess.com: https://www.chess.com/member/antonkimtm
 - Lichess: https://lichess.org/@/antonkimtm
+- Почта: antonkim@antonkim.com
 
 ## Об этом сайте
 
 antonkim.com — личная страница-визитка со ссылками на все площадки.
+Есть русская и английская версии.
+
+---
+
+# Anton Kim (English)
+
+> Chess journalist, commentator and streamer from Uzbekistan. Creator and host
+> of City Chess, a popular Russian-language chess YouTube channel with
+> 100K subscribers and 60M views.
+
+Known as the "tilt master". Username on chess platforms: antonkimtm.
+
+## What he does
+
+- Runs the City Chess YouTube channel: live Russian-language coverage of the
+  biggest chess events — World Championship matches, Candidates Tournaments,
+  World Championships, Chess Olympiads, super-tournaments (Grand Chess Tour,
+  Norway Chess), Titled Tuesday and the Esports World Cup — plus educational
+  videos, game analysis and chess infographics.
+- Commentates chess tournaments in Russian.
+- Writes about chess and translates interviews with top players.
+
+## Links
+
+- YouTube (City Chess): https://www.youtube.com/citychessuz
+- Boosty (support the channel): https://boosty.to/citychess
+- Telegram: https://t.me/antonkimblog
+- Instagram: https://www.instagram.com/antonkimtm/
+- Chess.com: https://www.chess.com/member/antonkimtm
+- Lichess: https://lichess.org/@/antonkimtm
+- Email: antonkim@antonkim.com
